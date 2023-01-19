@@ -57,3 +57,4 @@ combine the best of the both of the two and it is cloud agnostic.
 - it works with [.parquet](https://www.databricks.com/glossary/what-is-parquet)
   - it has a schema
 - as [ACID transactions](https://www.databricks.com/glossary/acid-transactions)
+- it has [time traveling](https://www.databricks.com/blog/2019/02/04/introducing-delta-time-travel-for-large-scale-data-lakes.html#:~:text=Introducing%20Time%20Travel)
