@@ -8,6 +8,9 @@
   - [DE 6.2 - Reasoning about Incremental Data](#de-62---reasoning-about-incremental-data)
     - [Homework - D.E 6](#homework---de-6)
   - [DE 7.1 - Incremental Multi-Hop in the Lakehouse](#de-71---incremental-multi-hop-in-the-lakehouse)
+    - [Homework - D.E 7](#homework---de-7)
+  - [DE 8.1.1 - DLT UI Walkthrough](#de-811---dlt-ui-walkthrough)
+  - [DE 9.1.1 - Task Orchestration with Databricks Jobs](#de-911---task-orchestration-with-databricks-jobs)
 
 ## DE 4.3 - Creating Delta Tables
 
@@ -66,3 +69,25 @@
 
 Data quality increases from Bronze to Gold
 This is just a blueprint, you can have as many layers as you want in the Bronze,Silver and Gold
+
+### Homework - D.E 7
+
+7.2
+
+## DE 8.1.1 - DLT UI Walkthrough
+
+- Delta live table is a pipeline that comes with monitor tools
+- you can set quality expectation for the data
+- it runs on a dedicated cluster
+  - if you set 0 workers, then it starts on the current cluster
+- dev vs prod
+  - prod: is isolated clusterd.
+    - if something goes wrong the cluster will be destroyed and created again. also it will retry on fail
+  - dev: if something goes wrong, you can reuse the cluster and it won't automatically retry on fail
+- you can only have on main stream
+- you need to use LIVE.name_table to reference the data that you are working with
+- delta live tables ui
+  - start only gets new data
+  - full refresh starts from the beginning
+
+## DE 9.1.1 - Task Orchestration with Databricks Jobs
